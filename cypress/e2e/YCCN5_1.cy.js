@@ -10,7 +10,7 @@ describe("SSO → CSKV", () => {
     cy.visit("https://dd3a.devlead.top");
   });
 
-  it.only("Kiểm tra thêm mới thành công ", () => {
+  it("Kiểm tra thêm mới thành công ", () => {
     cy.contains("Cấu trúc dữ liệu địa bàn CSKV", { timeout: 10000 }).should("be.visible").click();
     cy.contains("Địa bàn").click({ force: true });
     cy.contains("Yêu cầu cập nhật, bổ sung địa bàn").should("be.visible").click();
